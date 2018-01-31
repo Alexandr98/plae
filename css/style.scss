@@ -18,8 +18,7 @@
 #intro{
      max-width: 100%;
      min-height: 800px;
-     background: url('../img/intro1.png');
-     background-size: cover;
+     background: url('../img/intro1.png')no-repeat center/cover;
      .logo{
      	padding:33px 1103px 0px 35px;
      }
@@ -143,7 +142,6 @@ button{
 #Reviews1{
   max-width: 100%;
   min-height:800px; 
-
 .first{  
 	min-height:800px;
 	display: flex;
@@ -189,6 +187,7 @@ button{
 #Reviews2{
 	max-width: 100%;
 	min-height: 800px;
+ .second{	
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -199,12 +198,11 @@ button{
      }	
    }
 	.text2{	
-    max-width:100%;
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 175px;
 	.p3{
 		line-height: 30px;
 		letter-spacing: 1px;
@@ -218,6 +216,7 @@ button{
 		line-height: 26px;
         @include p;
 	 }
+   }
   }
 }
 #range{
@@ -443,11 +442,14 @@ line-height: 40px;
 			line-height: 40px;
 		}
 	  }
+  .fl{
+    display: flex;
+    flex-direction: row;
 	  .column{
 	  	display:inline-block;
 	  }
 	.forward1{
-		padding:66px 130px 0px 120px;
+		padding:0px 130px 0px 120px;
 		.bot{
 			padding-bottom:54px;
 		.best1{
@@ -567,6 +569,7 @@ line-height: 40px;
 		}
 	}
   }
+}  
   .contact{
   	padding:22px 0px 0px 0px;
   	text-align:center;
@@ -675,126 +678,396 @@ button{
 	line-height: 20px;
 	letter-spacing: 0.35px;
    }
-}	
-@media (min-width:1824px){
-#about .img1 img {
-    width: 800px;
-    height: 850px;
 }
-#Reviews1 .first .img2 img {
-    width: 900px;
-    height: 1030px;
- }
-#Reviews2 .text2 {
-    padding-left: 300px;
+
+@media (min-width:480px){
+#intro{
+	min-height: 700px;	
+	}
+#intro .intro_all .intro_text .caption .gop{
+	padding: 0px 10px 0 10px;
+}
+#intro .intro_all .intro_text .pad input{
+	width: 300px;
+	font-size: 15px;
+}
+#intro .intro_all .intro_text .pad button{
+	width: 120px;
+}
+#intro .intro_all .ellipse{
+	display: none;
+}
+#about{
+	flex-direction: column;
+	min-height: 700px;
+}
+#about .text p{
+	padding: 45px 10px 0 10px;
+}
+#about .text{
+	height: 700px;
+}
+#about .img1 img{
+	display: none;
+}
+#Reviews1{
+	background: url('../img/emme-pink-scooter--1-.png')no-repeat center/cover;
+	min-height: 600px;
+}
+#Reviews1 .first{
+	min-height: 600px;
+}
+#Reviews1 .first .text1 .customers{
+	color: #fff;
+}
+#Reviews1 .first .text1 .p1{
+	color: #fff;
+}
+#Reviews1 .first .text1 .p2{
+	color: #fff;
+}
+#Reviews1 .first .img2 img{
+	display: none;
+}
+#Reviews2{
+	background: url('../img/high-res-ty-red-steel-drip.png')no-repeat center/cover;
+	min-height: 600px;
+}
+#Reviews2 .first{
+	min-height: 600px;
+}
+#Reviews2 .img3 img{
+	display: none;
+}
+#Reviews2 .second .text2{
+	min-height: 600px;
+}
+#Reviews2 .second .text2 .p3{
+	color: #fff;
+}
+#Reviews2 .second .text2 .p4{
+	color: #fff;
+}
+#range{
+	min-height: 700px;
+}
+#range .the{
+	    padding: 77px 10px 0px 10px;
 }
 #why_plae{
-background:url('../img/why2.png') no-repeat center / cover;
+	background: url(../img/why3.png) no-repeat center/cover;
 }
-#why_plae .plae {
-    padding: 14px 415px 0px 442px;
-    text-align: center;
- 	}
+#why_plae .plae{
+	padding: 74px 5px 0px 5px;
+}
+#why_plae #all_boxes #box1{
+	height: 520px;
+	align-items: center;
+	margin:50px 0px 0px 0px;
+}
+#why_plae #all_boxes #box2{
+	padding-top: 0px;
+	display: none;
+}
+#why_plae #all_boxes #box1 .box1{
+	width: 333px;
+   }
+#why_plae #all_boxes #box1 .box2{
+	width: 333px;
+	height: 130px;
+  }
+#why_plae #all_boxes #box1 .box3{
+	width: 333px;
+	height: 150px;
+   } 
+#why_plae #all_boxes #box1 .box4{
+	width: 333px;
+	height: 110px;
+   } 
+ #where{
+ 	min-height: 700px;
+ }  
+ #where .UK{
+ 	    padding: 88px 10px 0px 10px;
+ }  
+#where .forward1{
+	padding: 66px 0px 0px 0px;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+#where .fl .column{
+	display: flex;
+	flex-direction: row;
+	 width: 100%;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+} 
+#where .fl .forward5{
+ 	display: none;
+ }
+#where .fl .forward4{
+ 	display: none;
+ }
+#where  .fl .forward3{
+ 	display: none;
+ }
+#where .fl .forward2{
+ 	display: none;
+ }
+#signup input{
+	font-size:15px;
+	width: 300px;
+} 
+#signup button{
+	width: 120px;
+}
+}
+
+@media (min-width:800px){
+#intro .intro_all .intro_text .caption .gop{
+	padding: 0px 10px 0 10px;
+}
+#intro .intro_all .ellipse{
+	display: none;
+}
+#about{
+	flex-direction: column;
+}
+#about .text p{
+	padding: 45px 100px 0 100px;
+}
+#about .text{
+	height: 700px;
+}
+#about .img1 img{
+	display: none;
+}
+#Reviews1{
+	background: url('../img/emme-pink-scooter--1-.png');
+}
+#Reviews1 .first .text1 .customers{
+	color: #fff;
+}
+#Reviews1 .first .text1 .p1{
+	color: #fff;
+}
+#Reviews1 .first .text1 .p2{
+	color: #fff;
+}
+#Reviews1 .first .img2 img{
+	display: none;
+}
+#Reviews2{
+	background: url('../img/high-res-ty-red-steel-drip.png');
+}
+#Reviews2 .img3 img{
+	display: none;
+}
+#Reviews2 .second .text2{
+	min-height: 800px;
+}
+#Reviews2 .second .text2 .p3{
+	color: #fff;
+}
+#Reviews2 .second .text2 .p4{
+	color: #fff;
+}
+#range .the{
+	    padding: 77px 10px 0px 10px;
+}
+#why_plae{
+	background: url(../img/why3.png) no-repeat center/cover;
+}
+#why_plae .plae{
+	padding: 74px 5px 0px 5px;
+}
+#why_plae #all_boxes #box1{
+	height: 520px;
+	margin:0px 0px 10px 59px;
+}
+#why_plae #all_boxes #box2{
+	padding-top: 0px;
+	display: flex;
+}
+#why_plae #all_boxes #box1 .box1{
+	width: 333px;
+   }
+#why_plae #all_boxes #box1 .box2{
+	width: 333px;
+	height: 130px;
+  }
+#why_plae #all_boxes #box1 .box3{
+	width: 333px;
+	height: 150px;
+   } 
+#why_plae #all_boxes #box1 .box4{
+	width: 333px;
+	height: 110px;
+   } 
 #why_plae #all_boxes #box2 .box5{
-	width: 233px;
+	width: 333px;
+	height: 70px
    }
 #why_plae #all_boxes #box2 .box6{
-	width: 233px;
+	width: 333px;
+	height: 115px;
   }
 #why_plae #all_boxes #box2 .box7{
-	width: 233px;
+	width: 333px;
+	height: 90px;
    } 
 #why_plae #all_boxes #box2 .box8{
-	width: 233px;
+	width: 333px;
+	height: 120px;
    } 
 #why_plae #all_boxes #box2 .box9{
-	width: 233px;
-   }  
-#where .forward1{
-		padding:66px 160px 0px 190px;           	
+	width: 333px;
+   }
+ #where{
+ 	min-height: 700px;
+ }  
+ #where .UK{
+ 	    padding: 88px 10px 0px 10px;
+ }  
+#where .fl.forward1{
+	padding: 66px 0px 0px 0px;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+} 
+#where .fl .forward5{
+ 	display: none;
+ }
+#where .fl .forward4{
+ 	display: none;
+ }
+#where .fl .forward3{
+ 	display: none;
+ }
+#where .fl .forward2{
+ 	display: none;
+ }
 }
-#where .forward2{
-		padding:0px 160px 0px 0px;
-}
-#where .forward3{
-		padding:0px 160px 0px 0px;
-}
-#where .forward4{
-		padding:0px 160px 0px 0px;
-  }
-}
-@media (max-width:1024px) {
+
+@media (min-width:1024px) {
  #intro .intro_all .intro_text .caption .gop {
     padding: 0px 200px 0 200px;
     }
  #about{
- 	min-height: 550px;
- }   	
+ 	min-height: 600px;
+ 	display: flex;
+ 	flex-direction: row;
+ }   
+ #intro .intro_all .ellipse{
+ 	display: flex;
+ }	
  #about .img1 img {
-    width: 490px;
-    height: 550px;
+ 	display: flex;
+    width: 500px;
+    height: 600px;
   }
   #about .text {
+  	height: 600px;
   justify-content: flex-start;
     padding-top: 20px;
 }
 #about .text p {
-  padding: 10px 10px 0px 10px;
+  padding: 10px 50px 0px 50px;
   }
  #Reviews1 {
-    min-height: 500px;
+ 	background: none;
+    min-height: 600px;
 }
-#Reviews2{
-	min-height: 600px;
+#Reviews1 .first .text1 .customers{
+	color: #000;
+}
+#Reviews1 .first .text1 .p1{
+	color: #000;
+}
+#Reviews1 .first .text1 .p2{
+	color: #000;
 }
  #Reviews1 .first {
     min-height: 500px;
 } 
 #Reviews1 .first .img2 img {
-    width: 535px;
+	display: flex;
+    width: 525px;
     height: 630px;
    }
-#Reviews2 .img3 img {
-    width: 490px;
+#Reviews2{
+	min-height: 600px;
+	background: none;
+} 
+#Reviews2 .second{
+	height: 600px;
+}  
+#Reviews2 .second .img3 img {
+	display: flex;
+    width: 500px;
     height: 600px;
 }
-#Reviews2 .text2{
-	padding-left: 110px;
+#Reviews2 .second .text2 .p3{
+	color: #000;
+}
+#Reviews2 .second .text2 .p4{
+	color: #000;
+}
+#Reviews2 .second .text2{
+	padding-left: 0px;
 }
 #range .the {
     padding: 77px 200px 0px 200px;
     text-align: center;
 }
 #why_plae {
-    background: url(../img/why2.png) no-repeat center/cover;
+    background: url(../img/why3.png) no-repeat center/cover;
 }
 #why_plae .plae {
     padding: 74px 200px 0px 200px;
     text-align: center;
+}
+#why_plae #all_boxes #box1{
+	height: 605px;
+	padding-top: 0px;
+	align-items: flex-start;
+}
+#why_plae #all_boxes #box2{
+	padding-top: 0px;
 }
 #why_plae #all_boxes #box1 .box1{
 	width: 233px;
    }
 #why_plae #all_boxes #box1 .box2{
 	width: 233px;
+	height: 153px;	
   }
 #why_plae #all_boxes #box1 .box3{
 	width: 233px;
+	height: 200px;
    } 
 #why_plae #all_boxes #box1 .box4{
 	width: 233px;
+	height: 135px;
    } 
 #why_plae #all_boxes #box2 .box5{
 	width: 233px;
+	height: 90px
    }
 #why_plae #all_boxes #box2 .box6{
 	width: 233px;
+	height: 135px;
   }
 #why_plae #all_boxes #box2 .box7{
 	width: 233px;
+	height: 113px;
    } 
 #why_plae #all_boxes #box2 .box8{
 	width: 233px;
+	height: 160px;
    } 
 #why_plae #all_boxes #box2 .box9{
 	width: 233px;
@@ -803,16 +1076,246 @@ background:url('../img/why2.png') no-repeat center / cover;
     padding: 88px 200px 0px 200px;
     text-align: center;
 }
-#where .forward1{
-		padding:66px 20px 0px 110px;           	
+#where .fl .forward1{
+	    display: inline-block;
+		padding:0px 70px 0px 140px;           	
 }
-#where .forward2{
-		padding:0px 20px 0px 0px;
+#where .fl .forward2{
+	    display: inline-block;
+		padding:0px 70px 0px 0px;
 }
-#where .forward3{
-		padding:0px 20px 0px 0px;
+#where .fl .forward3{
+	    display: inline-block;
+		padding:0px 70px 0px 0px;
 }
-#where .forward4{
-		padding:0px 20px 0px 0px;
-  }      
+#where .fl.forward4{
+        display: none;
+  }
+#where .fl .forward5{
+		display: none;   
+  }  
+ #signup input{
+ 	width: 325px;
+ } 
+#signup button{
+	width: 170px;
+}
+}
+
+@media (min-width:1366px){
+#intro .intro_all .intro_text .pad input{
+	width: 325px;
+}
+#intro .intro_all .intro_text .pad button{
+	width: 170px;
+}	
+#about{
+		min-height: 700px;
+	}
+#about .text{
+   padding-top:100px;
+	}
+#about .text p{
+	padding: 30px 50px 0px 50px;
+}
+#about .img1 img{
+    width: 658px;
+    height: 700px;
+    }
+#Reviews2{
+	min-height: 750px;
+}    
+#Reviews1 .first .img2 img {
+    width: 708px;
+    height: 820px;
+}
+#Reviews2 .second .img3 img{
+	width: 658px;
+    height: 750px;
+ }
+#why_plae{
+background:url('../img/why3.png') no-repeat center / cover;
 } 
+#why_plae #all_boxes #box1{
+	height: 600px;
+}
+#why_plae #all_boxes #box1 .box2{
+	height: 153px;
+}
+#why_plae #all_boxes #box1 .box3{
+	height: 200px;
+} 	
+#why_plae #all_boxes #box1 .box4{
+	height: 135px;
+}
+#why_plae #all_boxes #box2{
+	padding-top: 0px;
+	padding-right: 90px;
+}
+#why_plae #all_boxes #box2 .box5{
+	width: 333px;
+	height: 70px
+   }
+#why_plae #all_boxes #box2 .box6{
+	width: 333px;
+	height: 115px;
+  }
+#why_plae #all_boxes #box2 .box7{
+	width: 333px;
+	height: 100px;
+   } 
+#why_plae #all_boxes #box2 .box8{
+	width: 333px;
+	height: 120px;
+   } 
+#why_plae #all_boxes #box2 .box9{
+	width: 333px;
+   }  
+ #where .fl .forward4{
+ 	display: inline-block;
+ }     
+#where .fl .forward5{
+	display: none;
+}   
+}
+
+@media (min-width:1511px){
+	#about .text p{
+		padding: 50px 50px 0px 50px;
+	}
+	#about .text{
+		padding-top: 100px;
+	}
+#about .img1 img{
+    width: 758px;
+    height: 800px;
+     }
+#Reviews1 .first .img2 img {
+    width: 761px;
+    height: 900px;
+}
+#Reviews2{
+	min-height:900px; 
+}
+#Reviews2 .second .img3 img{
+	width: 758px;
+    height: 900px;
+ }
+#where .fl .forward1{
+	padding: 0px 130px 0px 130px;
+} 
+#where .fl .forward5{
+	display: none;
+}
+#why_plae{
+	background: url(../img/why.png) no-repeat center/cover;
+}
+#why_plae #all_boxes #box1{
+	height: 630px;
+}
+#why_plae #all_boxes #box2{
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#why_plae #all_boxes #box1 .box1{
+	width: 333px;
+}
+#why_plae #all_boxes #box1 .box2{
+	height: 150px;
+	width: 333px;
+}
+#why_plae #all_boxes #box1 .box3{
+	height: 195px;
+	width: 333px;
+}
+#why_plae #all_boxes #box1 .box4{
+	height: 130px;
+	width: 333px;
+}
+}
+
+
+@media (min-width:1824px) {
+#about .text{
+	padding-top: 200px;
+}	
+#about .img1 img {
+    width: 923px;
+    height: 1059px;
+}
+#Reviews2 .second .img3 img{
+	width: 923px;
+	height:1060px;
+}
+#Reviews1 .first .img2 img {
+    width: 900px;
+    height: 1030px;
+ }
+ #Reviews2{
+ 	min-height: 1050px;
+ }
+#Reviews2 .second .text2 {
+    padding-left: 0px;
+    height: 1050px;
+}
+#why_plae{
+min-height: 1050px;	
+background:url('../img/why2.png') no-repeat center / cover;
+}
+#why_plae .plae {
+    padding: 14px 415px 0px 442px;
+    text-align: center;
+ 	}
+#why_plae #all_boxes #box1{
+  height: 624px;
+  margin:0px 0px 0px 90px;
+}
+#why_plae #all_boxes #box1 .box2{
+	height: 130px;
+}
+#why_plae #all_boxes #box1 .box3{
+	height: 160px;
+} 	
+#why_plae #all_boxes #box1 .box4{
+	height: 115px;
+}
+#why_plae #all_boxes #box2{
+	padding-top: 0px;
+	padding-right: 90px;
+}
+#why_plae #all_boxes #box2 .box5{
+	width: 233px;
+	height: 90px
+   }
+#why_plae #all_boxes #box2 .box6{
+	width: 233px;
+	height: 135px;
+  }
+#why_plae #all_boxes #box2 .box7{
+	width: 233px;
+	height: 120px;
+   } 
+#why_plae #all_boxes #box2 .box8{
+	width: 233px;
+	height: 155px;
+   } 
+#why_plae #all_boxes #box2 .box9{
+	width: 233px;
+   }  
+#where .fl .forward1{
+		padding:0px 70px 0px 240px;           	
+}
+#where .fl .forward5{
+	display: inline-block;
+		padding:0px 160px 0px 0px; 
+  }  
+}
+
+
+
+
+
+
+ 
